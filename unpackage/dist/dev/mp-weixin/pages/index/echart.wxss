@@ -1,0 +1,367 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**index.wxss**/
+.userinfo {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.userinfo-avatar {width: 128rpx;height: 128rpx;margin: 20rpx;border-radius: 50%;}
+.userinfo-nickname {color: #aaa;}
+.usermotto {margin-top: 200px;}
+/* selectNav */
+.navlist{background: #f4f4f4; position:fixed; top:0; width: 100%; z-index: 999;}
+.nav-item{ 
+	display: inline-block; text-align: center; 
+    padding:20rpx 0; width:25%;}
+.stringcolor{ color:green;}
+/* page-1 */
+.content_text{ 
+	width:90%; height: 200rpx; margin:0 auto; border-bottom: #e3e3e3 solid 1rpx;
+	padding-top:38rpx; position: relative;
+}
+.content_text .itemtit{ font-size: 33rpx; font-weight: bold; color:#262626;}
+.content_text .itemcont{ font-size: 26rpx; color:#737373;}
+.content_text .itemstaut{  
+	font-size: 24rpx; color:#ffffff; background: #0280ff; display: inline-block; 
+	width:95rpx; height: 43rpx; border-radius: 5rpx; text-align: center; 
+	line-height: 43rpx; position: absolute; bottom: 20rpx;
+}
+.nav-page{display: -webkit-box;display: -webkit-flex;display: flex; display: -ms-flexbox; -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center;}
+/* page-2 */
+.page-2 .content_text{ height:310rpx;}
+.nickname{ 
+	display: -webkit-box; 
+	display: flex; display: -ms-flexbox; display: -webkit-flex; padding:26rpx 0;}
+.nickname .headlogo{ width: 60rpx; height: 60rpx; border-radius: 50%; background:green;}
+.nickname .headlogos{width: 60rpx; height: 60rpx; border-radius: 50%;
+}
+.nickname .name{ padding:10rpx 0 0 10rpx;}
+.itemdel{ 
+	font-size: 24rpx; color:#ffffff; background: #0280ff; display: inline-block;
+	width:107rpx; height: 37rpx; border-radius: 5rpx; text-align: center; 
+	line-height: 37rpx; position: absolute; bottom: 40rpx; right: 0;
+}
+.itemnum{ 
+	display: inline-block;font-size: 24rpx; position: absolute; bottom: 40rpx; color:#737373;
+}
+/* page-3 */
+.content_text .sharefriend{ 
+	font-size: 24rpx; color:#ffffff; background: #0280ff; display: inline-block;
+	width:107rpx; height: 37rpx; border-radius: 5rpx; text-align: center; 
+	line-height: 37rpx; position: absolute; bottom: 40rpx; right: 0;
+}
+.page-3 .content_text .itemnum{ 
+	display: inline-block;font-size: 24rpx; position: absolute; bottom: 40rpx; color:#737373;
+}
+/* page-4  */
+/* base style */
+.v-span,.v-button,.nav-page{ 
+	display: -webkit-box; 
+	display: -ms-flexbox; 
+	display: flex; display: -ms-flex; display: -webkit-flex; 
+	-webkit-box-pack: center; 
+	-webkit-justify-content: center; 
+	    -ms-flex-pack: center; 
+	        justify-content: center; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; margin-top:60rpx;}
+.v-span image{ width: 10%;}
+.v-span text{ padding:0 10rpx; font-size: 44rpx; color:#676767;}
+.v-button{ 
+	width: 217rpx; padding:10rpx 0; background-color: #0282ff; border-radius:32rpx;
+	margin:80rpx auto auto;
+}
+.v-button image{ width: 20%;}
+.v-button text{ padding:0 10rpx; font-size: 28rpx; color:#fff;}
+.nav-page image{ width: 6%;}
+.nav-page text{ padding:0 10rpx; font-size: 28rpx; color:#676767;}
+/* 加载addmore */
+.addmore,.nomore{
+	text-align: center; width:90%; margin: 20rpx auto auto; background: #0280ff;
+	font-size: 24rpx; color:#ffffff; padding:20rpx 0;
+}
+.nomore{background:#e3e3e3; color:#ffffff;}
+
